@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout Code') {
+        stage('Checkout') {
             steps {
-                echo 'Code pulled from GitHub'
+                echo "Code checked out successfully"
                 sh 'ls -l'
             }
         }
@@ -14,6 +14,13 @@ pipeline {
                 sh '''
                 sudo apt update
                 sudo apt install -y apache2
+                '''
+            }
+        }
+
+        stage('Start Apache') {
+            steps {
+                sh '''
                 sudo systemctl start apache2
                 sudo systemctl status apache2
                 '''
