@@ -40,3 +40,4 @@ Apache Web Server was successfully deployed and managed on Ubuntu Linux as a beg
 ![Apache Status](apache-status.png)
 
 hello
+Updated via terminal Git practice.
