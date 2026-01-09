@@ -41,3 +41,5 @@ Apache Web Server was successfully deployed and managed on Ubuntu Linux as a beg
 
 hello
 Updated via terminal Git practice.
+
+Auto build test from terminal
